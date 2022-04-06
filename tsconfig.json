@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["dom", "es2017"],
+    "outDir": "dist/src",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "declarationDir": "dist/typings",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
+  }
+}
