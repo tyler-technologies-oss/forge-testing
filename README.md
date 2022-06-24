@@ -1,6 +1,6 @@
 # Forge Testing
 
-This repository offers a library of e2e/unit testing utilities targeting Web Component libraries.
+This repository offers a library of e2e/unit testing utilities targeting Forge Web Component libraries.
 
 ## Usage
 
