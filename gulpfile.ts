@@ -74,7 +74,14 @@ task('generate:bundles', async () => {
 });
 
 /** Copies the package.json to the build output directory. */
-task('copy:packageJson', () => copyFilesAsync(join(ROOT, 'package.json'), ROOT, DIST_ROOT));
+task('copy', () => {
+  const files = [
+    join(ROOT, 'package.json'),
+    join(ROOT, 'README.md'),
+    join(ROOT, 'LICENSE')
+  ];
+  return copyFilesAsync(files, ROOT, DIST_ROOT);
+});
 
 /** Adjusts the package.json to prepare it for public distribution. */
 task('fixup:packageJson', async () => {
@@ -89,7 +96,7 @@ task('fixup:packageJson', async () => {
 });
 
 /** The main build task that generates the npm package. */
-task('build', series('clean', 'lint', 'generate:bundles', 'copy:packageJson', 'fixup:packageJson'));
+task('build', series('clean', 'lint', 'generate:bundles', 'copy', 'fixup:packageJson'));
 
 export interface IBundleConfig {
   input: string;
