@@ -1,6 +1,6 @@
 {
   "name": "@tylertech/forge-testing",
-  "version": "2.0.0-rc.0",
+  "version": "2.0.0",
   "description": "A library of testing utilities targeting Forge Web Component libraries.",
   "author": "Tyler Technologies, Inc.",
   "license": "Apache-2.0",
